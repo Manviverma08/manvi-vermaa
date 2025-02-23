@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5501/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel World</title>
+    <link rel="stylesheet" href="./Travel World_files/style.css">
+</head>
+<body>
+    <header>
+        <h1>Travel World</h1>
+        <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:5501/index.html#home">Home</a></li>
+                <li><a href="http://127.0.0.1:5501/index.html#destinations">Destinations</a></li>
+                <li><a href="http://127.0.0.1:5501/index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to Travel World</h2>
+        <p>Discover the world's most amazing destinations.</p>
+    </section>
+
+    <section id="destinations">
+        <h2>Top Destinations</h2>
+        <div class="destination">
+            <img src="./Travel World_files/250px-Tour_Eiffel_Wikimedia_Commons_(cropped).jpg" alt="Paris">
+            <h3>PARIS,FRANCE </h3>
+            <h3>Paris, France</h3>
+            <p>Experience the charm of the Eiffel Tower and fine dining.</p>
+        </div>
+        <div class="destination">
+            <img src="./Travel World_files/images" alt="DELHI">
+            <h3>DELHI , INDIA</h3>
+            <h3>Delhi,India</h3>
+            <p>Explore the hestorical momentum of india.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required="">
+            <input type="email" placeholder="Your Email" required="">
+            <textarea placeholder="Your Message" required=""></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>©@manvi 2025 Travel Explorer. All rights reserved.</p>
+    </footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
